@@ -1,0 +1,28 @@
+.scrollToTop-btn{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5b62f4;
+    border-radius: 50%;
+    padding: 0.5rem;
+    text-decoration: none;
+    transform: translateX(500%);
+    transition: 0.2s ease-out;
+}
+.scrollToTop-btn i{
+    color: white;
+    font-size: 24px;
+    transition: 0.2s ease-out;
+}
+.scrollToTop-btn.active{
+    pointer-events: all;
+    transform: translateX(0%);
+}
+@media screen and (max-width: 767px){
+    .scrollToTop-btn{
+        opacity: 0;
+    }
+}
